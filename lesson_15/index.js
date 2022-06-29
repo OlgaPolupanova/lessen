@@ -9,6 +9,7 @@ let name = 'Olya',
 let x = 5,
     y = 10,
     z = 15;
+    c = NaN;
 
 // boolean - булиевой тип данных
 let flag = true,
@@ -40,6 +41,8 @@ let bigInt = 100n;
 
 // Тернарные оперторы
 // Логические выражения
+
+
 
 
 
