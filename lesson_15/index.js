@@ -15,16 +15,16 @@ let x = 5,
 let flag = true,
     flag1 = false;
 
-//undefined - пустота
+// undefined - пустота
 let und = undefined;
 
-//null - намеренная пустота
+// null - намеренная пустота
 let n = null;
 
-//Symbol - символ
+// Symbol - символ
 let s = Symbol();
 
-//Большое число  - bigint
+// Большое число  - bigint
 let bigInt = 100n;
 
 /* Операции и операторы */
