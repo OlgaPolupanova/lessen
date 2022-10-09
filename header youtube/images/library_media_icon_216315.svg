@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><svg height="32" id="icon" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><defs><style>
+      .cls-1 {
+        fill: none;
+      }
+    </style></defs><polygon points="13 15 13 23 13 23 20 19 13 15"/><path d="M26,28H6a2.0021,2.0021,0,0,1-2-2V12a2.0021,2.0021,0,0,1,2-2H26a2.0021,2.0021,0,0,1,2,2V26A2.0021,2.0021,0,0,1,26,28ZM6,12V26H26V12Z"/><rect height="2" width="20" x="6" y="6"/><rect height="2" width="16" x="8" y="2"/><rect class="cls-1" data-name="&lt;Transparent Rectangle&gt;" height="32" id="_Transparent_Rectangle_" width="32"/></svg>
