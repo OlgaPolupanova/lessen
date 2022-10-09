@@ -26,11 +26,15 @@ let FamilyInfo = {
    name: 'Nasty',
    age: 4,
    address: false,
+   undefined: undefined,
+   null: null
 }
-console.log(FamilyInfo);
+
 FamilyInfo.name = !'Nasty';
 FamilyInfo.age = 4 < 5;
 FamilyInfo.address = false || true;
+FamilyInfo.undefined = Boolean(undefined);
+FamilyInfo.null = Boolean(null);
 console.log(FamilyInfo); 
 
 // 3)
@@ -39,12 +43,10 @@ console.log(FamilyInfo);
 //    в) Измените свойство объекта, установленного во второй переменной, не обращаясь ко второй переменной 
 let MyHome = {
    city: 'Nadym',
-   street: 'Polyarnaya',
+   street: 'Polyarnaya'
 }
-console.log(MyHome);
 
 let FamilyHome = MyHome;
-console.log(FamilyHome);
 
 MyHome.city = 'Piter';
 MyHome.street = 'Neva';
@@ -53,11 +55,13 @@ console.log(FamilyHome);
 
 // ? 4) оздайте переменную и запишите в неё объект с произвольными свойствами и свойством,
 //  который должен являться произвольным объектом.
-const obj = 
-   { name: 'Eva',};
-
-obj.age = {
-   age: 35
+const obj = {
+      name: 'Artemiy',
+      age: 10,
+      sister: {
+         name: 'Eva',
+         age: 5
+      }
 };
 console.log(obj);
 // 5)
@@ -65,67 +69,72 @@ console.log(obj);
 //    б) выведите в консоль красный, зелёный и фиеолетовые цвета
 
 const rainbow = ['red', 'orange', 'yelloy', 'green', 'blue', 'purple'];
-console.log(rainbow['0']);
-console.log(rainbow['3']);
-console.log(rainbow['5']);
+console.log(rainbow[0]);
+console.log(rainbow[3]);
+console.log(rainbow[5]);
 
 // 6)
 //    а) оздайте переменную и запишите в неё массив, который содержит 4 объекта со свойствми имя и возраст человека.
 //    б) выведите в консоль все имена
 const peple = [
    {
-      name: 'Olga'
-   },
-   {
+      name: 'Olga',
       age: 33
    },
    {
-      name: 'Artemyi'
+      name: 'Artem',
+      age: 34
    },
    {
-      age: 34
+      name: 'Artemyi',
+      age: 7
+   },
+   {
+      name:'Anastasia',
+      age: 4
    }
 ];
-console.log(peple['0'].name);
-console.log(peple['2'].name);
+console.log(peple[0].name);
+console.log(peple[1].name);
+console.log(peple[2].name);
+console.log(peple[3].name);
 
 // 7) а) оздайте переменную и запишите в неё массив, который содержит 3 массива. 1й- список имён, 2й- список возрастов, 3й списко булевых значений
 //    б) вывести в консоль второе имя, второй возраст, второе булевое значение в списке.
 
-const arr1 = [['Olga', 'Artem', 'Artemyi'], [33, 34, 7], [false, true,]];
+const arr1 = [
+   ['Olga', 'Artem', 'Artemyi'],
+   [33, 34, 7],
+   [false, true]
+];
 console.log(arr1[0][1]);
 console.log(arr1[1][1]);
 console.log(arr1[2][1]);
 
 // 8) Создайте вункцию, которая принимает в качестве аргумента любое значение. И возвращает его булевый эквиволент.
-const fu = function () {
-   let x = 100;
-   const result = (!x);
-   console.log(result);
+const fu = function (x) {
+   return Boolean(x)
 }
-fu();
+console.log(fu(2));
 
 // 9) Создайте функцию, которая принимает в качестве аргументов два строковых значения и возвращает их конкатенацию.
-const phone = function () {
-   let x = 'Samsung';
-   let y = 'Apple';
-   const result = (x + y);
-   console.log(result);
+const phone = function (x,y) {
+   return (x + y)
 }
-phone();
+console.log(phone('Samsung', 'Apple'));
 // 10) Создайте функцию которая принимает первым аргументом число, а вторым булевое значение.
 //  Функция должна вернуть квадрат этого числа, если булевое значенеи true, и корень - если false.
 // ыue);
 
 const fu2 = function (x, y) {
-   if (!y) {
-      console.log (x**2);
+   if(!x) {
+      return Math.pow(x, 2);
    }
    else {
-      console.log (x**(1/2));
+      return Math.sqrt(x);
    }
 }
-const result1 = fu2(9, '');
+console.log(fu2(9, false));
 
 // 11) Создайте функцию которая принимает:
 //    - первым аргументом любое имя (строка)
@@ -133,64 +142,59 @@ const result1 = fu2(9, '');
 //    - третьим аргументом булевое значение
 
 //    Функция должна возвращать объект со свойствами "name", "age", "isMan"
-const fu3 = function (name, age, isMan) {
-   let q = 'Alisa';
-   let w = 44;
-   let e = true;
+const fu3 = function (x, y, z) {
    return {
-      name: name,
-      age: age,
-      isMan: isMan
+      name: x,
+      age: y,
+      isMan: z
    }
 }
-const result3 = fu3();
-console.log(result3);
+console.log(fu3('Alisa', 44, true));
 
-// ? 12) (Эта задача уже посложнее, использовать не только тело функции) Создайте функцию которая первые три вызова будет выводить в консоль сообщение "Hello world". После третьего ничего не будет выводить
+// ? 12) (Эта задача уже посложнее, использовать не только тело функции) Создайте функцию которая первые 
+// три вызова будет выводить в консоль сообщение "Hello world". После третьего ничего не будет выводить
+let a = 4;
 const hello = function () {
-   let x = 'Hello world';
-   const result = x;
-   console.log(result);
+   if( a < 5 ) console.log('Hello world');
+   if( a > 3 ) console.log('Hello world');
+   if( a == 4 ) console.log('Hello world');
+   if( a != 4 ) console.log('Hello world');
 }
-hello();
-hello();
+
 hello();
 
 // 13) Исправьте функцию так чтобы она возвращала 50
-
-const fu4 = function () {
-   const x = 100;
-   const y = x / 2;
-   return y
+const fu4 = function (x, y) {
+   return x/y
 }
-const result = fu4();
-console.log(result);
+console.log(fu4(100, 2));
 
 // 14) Создайте функцию которая принимает в качестве аргументов 3 булевых аргумента и 
 // возвращает true если все 3 аргумента true, в противном случае функця должна возвращать false
  const fu5 = function (a, b, c) {
-if (a&&b&&c) {
-   console.log("Good morning!");
+if (a||b||c) {
+   return true
 } else {
-   console.log("Good by!");
+   return false
 }
 }
-const result4 = fu5(5>9, ' ', 7>1);
+console.log(fu5(false, true, false));
 
 // 15) Напишите функцию которая принимает  в качестве аргумента любое значение и возвращает тип данного значения (если не помнишь как узнать тип то посмотри в интернете)
-const fu6 = function () {
-   const a = 'Hello';
+const fu6 = function (a) {
    return typeof a
 }
-const result2 = fu6();
-console.log(result2);
+console.log(fu6('Hello'));
+
 // ? =16) Напишите функцию которая принимает в качестве аргумента любой объект, 
 // и возвращает объект с удалённым свойство "name"
 
-const fu7 = function () {
-   const obj = {
-      name: 'Masha',
-   }
-}
-console.log(fu7.name);
-
+const YouName = function ( 
+   obj = {
+   name: 'Masha'
+})
+{
+   delete YouName.obj.name
+   return YouName.obj.name
+};
+console.log(YouName.name);
