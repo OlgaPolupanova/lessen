@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <link rel="stylesheet" href="css/slyle.css">
-   <title>Шапка Youtube</title>
+   <title> Шапка Youtube </title>
 </head>
 
 <body>
    <div class="container">
       <div class="header">
-         <div class="header__logo header__position">
-            <div class="header__logo__menu header__position"></div>
-            <div class="header__logo__youtube header__position"></div>
+         <div class="header__logo header-position">
+            <div class="header__logo__menu header-position"></div>
+            <div class="header__logo__youtube header-position"></div>
          </div>
-         <div class="header__search header__position">
-            <div class="header__search__text header__position">Введите запрос</div>
-               <div class="header__search__keyboard header__position"></div>
-               <div class="header__search__fon header__position"></div>
+         <div class="header__search header-position">
+            <div class="header__search__text header-position"> Введите запрос </div>
+            <div class="header__search__keyboard header-position"></div>
+            <div class="header__search__grey header-position">
+               <div class="header__search__image header-position"></div>
             </div>
-            <div class="header__search__image header__position"></div>
-            <div class="header__microphone header__position"></div>
+            <div class="header__microphone header-position"></div>
+         </div>
          <div class="header__profile">
-            <div class="header__image__microphone header__position"></div>
-            <div class="header__image__video header__position"></div>
-            <div class="header__image__sub header__position"></div>
-            <div class="header__circle header__position"></div>
-      </div>
+            <div class="header__profile__video header-position"></div>
+            <div class="header__profile__sub header-position"></div>
+            <div class="header__circle header-position"></div>
+         </div>
       </div>
       <div class="inform">
-            <li class="inform__main inform__options"></li>
-            <div class="inform__main__text inform__options"> Главная </div>
-            <li class="inform__navigator inform__options"></li>
-            <div class="inform__navigator__text inform__options"> Навигатор </div>
-            <li class="inform__shorts inform__options"></li>
-            <div class="inform__shorts__text inform__options"> Shorts </div>
-            <li class="inform__subscriptions inform__options"></li>
-            <div class="inform__subscriptions__text inform__options"> Подписки </div>
-            <li class="inform__library inform__options"></li>
-            <div class="inform__library__text inform__options"> Библиотека </div>
+         <ui>
+            <li>
+               <div class="inform__options"></div>
+               <div class="inform__main inform__options"></div>
+               <div class="inform__main__text inform__options"> Главная </div>
+            </li>
+            <li>
+               <div class="inform__navigator__text inform__options"> Навигатор </div>
+               <div class="inform__navigator inform__options"></div>
+            </li>
+            <li>
+               <div class="inform__shorts inform__options"></div>
+               <div class="inform__shorts__text inform__options"> Shorts </div>
+            </li>
+            <li>
+               <div class="inform__subscriptions inform__options"></div>
+               <div class="inform__subscriptions__text inform__options"> Подписки </div>
+            </li>
+            <li>
+               <div class="inform__library inform__options"></div>
+               <div class="inform__library__text inform__options"> Библиотека </div>
+            </li>
+         </ui>
       </div>
-      <div class="content"></div>
+      <div class="content">
+         <div class="content__header">
+            <div class="content__header__block1 content__header__block">
+               <div> Все </div>
+            </div>
+            <div class="content__header__block2 content__header__block">
+               <div> Сейчас в эфире </div>
+            </div>
+            <div class="content__header__block3 content__header__block">
+               <div> Видеоигры </div>
+            </div>
+         </div>
+      </div>
    </div>
 </body>
+
 </html>

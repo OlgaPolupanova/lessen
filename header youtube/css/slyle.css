@@ -18,7 +18,7 @@
    border-bottom: 1px solid rgb(192, 199, 192);
 }
 
-.header__position {
+.header-position {
    position: absolute;
 }
 
@@ -52,11 +52,10 @@
    border: 1px solid rgb(199, 195, 195);
    left: 350px;
    top: 10px;
-   position: relative;
 }
 
 .header__profile {
-   width: 200px;
+   width: 140px;
    height: 40px;
    right: 10px;
    top: 10px;
@@ -64,16 +63,16 @@
 }
 
 .header__search__keyboard {
-   background:url(../images/keyboard_icon-icons.com_53964.svg);
+   background: url(../images/keyboard_icon-icons.com_53964.svg);
    height: 30px;
    width: 20px;
-   background-repeat:no-repeat;
+   background-repeat: no-repeat;
    background-size: contain;
    left: 505px;
    top: 11px;
 }
 
-.header__search__fon {
+.header__search__grey {
    width: 60px;
    height: 40px;
    right: 0;
@@ -83,13 +82,13 @@
 }
 
 .header__search__image {
-   background:url(../images/036search_100009.svg);
+   background: url(../images/036search_100009.svg);
    height: 30px;
    width: 18px;
-   background-repeat:no-repeat;
+   background-repeat: no-repeat;
    background-size: contain;
-   top: 22px;
-   right: 417px;
+   top: 13px;
+   left: 22px;
 }
 
 .header__search__text {
@@ -106,11 +105,11 @@
    width: 30px;
    background-repeat: no-repeat;
    background-size: contain;
-   left: 975px;
-   top: 20px;
+   right: -47px;
+   top: 8px;
 }
 
-.header__image__video {
+.header__profile__video {
    background: url(../images/add_video_icon_217156.svg);
    height: 25px;
    width: 30px;
@@ -120,7 +119,7 @@
    top: 9px;
 }
 
-.header__image__sub {
+.header__profile__sub {
    background: url(../images/bell_64.svg);
    height: 25px;
    width: 30px;
@@ -142,12 +141,15 @@
 .inform {
    height: 100%;
    width: 80px;
-   position: relative;
+   position: absolute;
+}
+
+.inform li {
+   list-style-type: none;
 }
 
 .inform__options {
    position: absolute;
-   list-style-type: none;
    font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -236,4 +238,39 @@
    top: 60px;
    background: rgb(250, 249, 249);
    left: 80px;
+}
+
+.content__header {
+   height: 30px;
+   background: white;
+   border-bottom: 1px solid rgb(192, 199, 192);
+}
+
+.content__header__block {
+   position: absolute;
+   border-radius: 20px;
+   font-size: 13px;
+   text-align: center;
+   top: 7px;
+   outline: 1px solid rgb(192, 191, 191);
+}
+
+
+.content__header__block1 {
+   width: 36px;
+   background-color: black;
+   color: white;
+   left: 30px;
+}
+
+.content__header__block2 {
+   width: 105px;
+   left: 75px;
+   background-color: rgb(231, 228, 228);
+}
+
+.content__header__block3 {
+   width: 90px;
+   left: 190px;
+   background-color: rgb(231, 228, 228);
 }
