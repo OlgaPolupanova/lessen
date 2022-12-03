@@ -1,0 +1,23 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.squares__two {
+   left: 300px;
+}
+
+.squares__three {
+   left: 600px;
+}
+
+.squares__four {
+   left: 900px;
+}
+
+.squares-position__size {
+   position: absolute;
+   height: 300px;
+   width: 300px;
+   border: 1px solid black;
+}
