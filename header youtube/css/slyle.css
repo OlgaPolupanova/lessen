@@ -1,21 +1,25 @@
+@font-face {
+   font-family: 'Roboto', sans-serif;
+   src: url(../fonts/Roboto-Regular.ttf);
+}
+
 * {
    margin: 0;
    padding: 0;
+
 }
 
 .container {
    width: 100%;
    height: 2000px;
-   margin: auto;
    position: relative;
    padding: 0;
 }
 
 .header {
    width: 100%;
-   height: 60px;
+   height: 56px;
    box-sizing: border-box;
-   border-bottom: 1px solid rgb(192, 199, 192);
 }
 
 .header-position {
@@ -23,8 +27,8 @@
 }
 
 .header__logo {
-   width: 200px;
-   height: 60px;
+   width: 169px;
+   height: 56px;
 }
 
 .header__logo__menu {
@@ -38,8 +42,8 @@
 }
 
 .header__logo__youtube {
-   width: 120px;
-   height: 60px;
+   width: 169px;
+   height: 56px;
    background: url(../images/youtube_logo_icon_167938.svg);
    background-repeat: no-repeat;
    background-size: contain;
@@ -47,11 +51,13 @@
 }
 
 .header__search {
-   width: 600px;
+   width: 644px;
    height: 40px;
    border: 1px solid rgb(199, 195, 195);
-   left: 350px;
-   top: 10px;
+   left: 335px;
+   top: 6px;
+   border-radius: 5px;
+   border-radius: 40px;
 }
 
 .header__profile {
@@ -68,17 +74,19 @@
    width: 20px;
    background-repeat: no-repeat;
    background-size: contain;
-   left: 505px;
-   top: 11px;
+   left: 550px;
+   top: 10px;
 }
 
 .header__search__grey {
    width: 60px;
    height: 40px;
    right: 0;
-   background-color: rgb(245, 243, 243);
+   background-color: rgb(248, 248, 248);
    border-left: 1px solid rgb(218, 216, 216);
    box-sizing: border-box;
+   border-bottom-right-radius: 40px;
+   border-top-right-radius: 40px;
 }
 
 .header__search__image {
@@ -87,26 +95,35 @@
    width: 18px;
    background-repeat: no-repeat;
    background-size: contain;
-   top: 13px;
-   left: 22px;
+   top: 11px;
+   left: 18px;
 }
 
 .header__search__text {
    left: 15px;
-   font-size: 18px;
+   font-size: 16px;
    color: rgb(170 157 157);
-   top: 10px;
-   font-family: Roboto, Arial, sans-serif;
+   top: 11px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.header__microphone__grey {
+   width: 40px;
+   height: 40px;
+   right: -57px;
+   border-top-left-radius: l0px;
+   background-color: rgb(248, 248, 248);
+   border-radius: 50%;
 }
 
 .header__microphone {
    background: url(../images/audio_microphone_mic_icon_195086.svg);
-   height: 25px;
+   height: 21px;
    width: 30px;
    background-repeat: no-repeat;
    background-size: contain;
-   right: -47px;
-   top: 8px;
+   right: -3px;
+   top: 9px;
 }
 
 .header__profile__video {
@@ -150,7 +167,7 @@
 
 .inform__options {
    position: absolute;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Roboto', sans-serif;
 }
 
 .inform__main {
@@ -234,43 +251,101 @@
 .content {
    height: 100%;
    width: 100%;
-   position: absolute;
    top: 60px;
-   background: rgb(250, 249, 249);
-   left: 80px;
+   left: 100px;
+}
+
+.content-position {
+   position: absolute;
 }
 
 .content__header {
-   height: 30px;
+   height: 60px;
    background: white;
-   border-bottom: 1px solid rgb(192, 199, 192);
+   font-family: 'Roboto', sans-serif;
 }
 
 .content__header__block {
-   position: absolute;
-   border-radius: 20px;
-   font-size: 13px;
+   height: 30px;
+   line-height: 28px;
+   border-radius: 10px;
+   font-size: 14px;
    text-align: center;
-   top: 7px;
-   outline: 1px solid rgb(192, 191, 191);
+   top: 8px;
 }
 
+.content__header__block-color__grey {
+   background-color: rgba(0, 0, 0, 0.051);
+}
 
 .content__header__block1 {
-   width: 36px;
+   width: 45px;
    background-color: black;
    color: white;
-   left: 30px;
+   left: 15px;
 }
 
 .content__header__block2 {
-   width: 105px;
-   left: 75px;
-   background-color: rgb(231, 228, 228);
+   width: 110px;
+   left: 72px;
 }
 
 .content__header__block3 {
    width: 90px;
    left: 190px;
-   background-color: rgb(231, 228, 228);
+}
+
+.content__header__video {
+   left: 340px;
+   top: 60px;
+}
+
+.contect__header__video__blog {
+   width: 320px;
+   height: 180px;
+   margin: auto;
+   border-radius: 10%;
+   background-color: rgb(122, 125, 124);
+   left: 10px;
+}
+
+.contect__header__video__blog__text {
+   position: relative;
+   width: 320px;
+   height: 100px;
+   top: 190px;
+}
+
+.contect__header__video__blog__text__style {
+   left: 60px;
+   font-family:'Roboto', sans-serif;
+   font-size: small;
+}
+
+.content__header__video__blog__text1 {
+   width: 270px;
+   text-align: left;
+   left: 60px;
+   font-weight: bold;
+   font-family:'Roboto', sans-serif;
+}
+
+.content__header__video__blog__text2 {
+   top: 45px;
+}
+
+.content__header__video__blog__text3 {
+   top: 65px;
+}
+
+.content__header__video__blog__text4 {
+   top: 85px;
+}
+
+.content__header__video__blog__text__circle {
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   background-color:rgb(232, 228, 228); ;
+   left: 10px;
 }
