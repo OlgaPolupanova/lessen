@@ -1,9 +1,9 @@
-const result = document.querySelectorAll('div');
-console.log(result);
+const result = document.getElementsByClassName('squares-position__size');
 
-for(var i = 1; i < result.length; i++) {
-  if (i % 2)
-result[i].addEventListener('click', function(){
-  this.style.backgroundColor = '#000000';
-});
-};
+for (let i = 0; i < result.length; i++) {
+  if (i % 2) {
+    result[i].addEventListener('click', function(){
+      result[i].style.background = 'black';
+    });
+  }
+}

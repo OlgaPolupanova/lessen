@@ -1,6 +1,6 @@
-const result = document.getElementsByClassName('circle')
-console.log(result)
+const result = document.getElementsByClassName('circle');
 
 result[0].addEventListener('click', function () {
-   result[0].style.transform = 'scale(2)';
+   result[0].style.width = '400px';
+   result[0].style.height = '400px';
 })

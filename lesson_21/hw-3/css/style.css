@@ -10,7 +10,11 @@
    position: absolute;
    left: 0;
    right: 0;
-   top: 50%;
    margin: auto;
    border: 1px solid black;
+}
+
+.circle__two {
+   top: 300px;
+   display: none;
 }
